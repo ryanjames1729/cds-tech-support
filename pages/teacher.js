@@ -62,7 +62,7 @@ export default function Teacher( {articles} ) {
                 <h1 class="text-4xl">Support Articles</h1>
                 {articles.map(article => (
                     <div className="p-2">
-                    <Link href="/article/[slug]" as={`/article/${article.slug}`}>
+                    <Link href="/[targetAudience]/[slug]" as={`/${article.targetAudience}/${article.slug}`}>
                         <a>
                         <div class="grid grid-cols-2 md:grid-cols-6 border-solid hover:border-red-500 hover:shadow-sm border-2 rounded">
                             <div class="w-16 md:w-36">
